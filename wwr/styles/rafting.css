@@ -1,8 +1,8 @@
 :root {
     --heading-background-color: lightblue;
     --heading-text-color: #333;
-    --heading-font: 'Roboto Condensed Light 300', sans-serif;
-    --secondary-font: 'Ubuntu Regular 400', sans-serif;
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --secondary-font: 'Ubuntu', sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb(0 0 0 / 0.1);
     --background-color: lightblue;
@@ -70,7 +70,6 @@ h1 {
     padding: var(--padding);
     margin: 0;
     position: absolute;
-
 }
 
 article {
