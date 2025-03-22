@@ -111,3 +111,8 @@ section p {
     font-family: var(--secondary-font);
     font-size: 20px;
 }
+
+footer a {
+    text-decoration: none; /* Remove text decoration from footer links */
+    color: var(--link-color); /* Ensure the color matches the other links */
+}
