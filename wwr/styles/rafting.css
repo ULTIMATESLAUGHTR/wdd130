@@ -1,0 +1,114 @@
+:root {
+    --heading-background-color: lightblue;
+    --heading-text-color: #333;
+    --heading-font: 'Roboto Condensed Light 300', sans-serif;
+    --secondary-font: 'Ubuntu Regular 400', sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+    --background-color: lightblue;
+    --text-color: #333;
+    --link-color: red;
+    --accent-color: grey;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: white;
+    padding: var(--padding);
+    text-align: left;
+    margin: 0;
+    border-bottom: #333;
+    border-bottom-width: 1px;
+    color: var(--link-color);
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+nav img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Add some space between the logo and the links */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    margin-right: 1rem; /* Add some space between the links */
+}
+
+nav a {
+    color: var(--link-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; /* Ensures hero image is on top */
+}
+
+h1 {
+    background-color: var(--heading-background-color);
+    color: red;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    padding: var(--padding);
+    margin: 0;
+    position: absolute;
+
+}
+
+article {
+    margin: 2rem; /* Add bottom margin to create space between article and next section */
+    padding: var(--padding);
+    border: var(--border);
+    background-color: #eee;
+    position: relative; /* Changed from absolute to relative */
+    top: 50px;
+    z-index: 0; /* Ensure article is below hero image */
+}
+
+article img {
+    float: right; /* Float the image to the right */
+    width: 200px;
+    height: auto;
+    margin: -20px 0 1rem 1rem; /* Move the image up by 20px and add space around it */
+}
+
+article p {
+    text-align: left;
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
+section {
+    margin-top: 3rem; /* Add top margin to create space between sections */
+}
+
+h2 {
+    margin-top: 6rem; /* Add top margin to create space between h2 and previous content */
+    color: red;
+    font-family: var(--heading-font);
+    font-size: 30px;
+}
+
+section p {
+    color: #333;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+}
