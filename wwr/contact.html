@@ -28,30 +28,43 @@
     </header>
     <main>
         <h1 class="contactustitle">Reach out to us to Start your Adventure!</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Office Address</th>
-                        <th scope="col">Office Phone Number</th>
-                        <th scope="col">Trip Planning Number</th>
-                        <th scope="col">Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1701 Park Blvd, Ogden, UT 84401</td>
-                        <td>801-664-1234</td>
-                        <td>801-664-2216</td>
-                        <td>thewildrapids@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Office Address</th>
+                    <th scope="col">Office Phone Number</th>
+                    <th scope="col">Trip Planning Number</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1701 Park Blvd, Ogden, UT 84401</td>
+                    <td>801-664-1234</td>
+                    <td>801-664-2216</td>
+                    <td>thewildrapids@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
             <section class="contact-container">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20177.477167623292!2d-111.78631780062787!3d41.2566274432792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8753a76f8b8c3667%3A0xb8b8140ba4551758!2sOgden%20River!5e0!3m2!1sen!2sus!4v1743605151737!5m2!1sen!2sus" 
-                        width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=..." 
+                        width="400" 
+                        height="300" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Map showing Ogden River location">
                     </iframe>
                 </div>
+                <div class="contactform">
+                    <h2>Contact Us Form</h2>
+                    <form action="https://formspree.io/f/xjvjlqzq" method="POST">
+                        ...
+                    </form>
+                </div>
+            </section>
                 <div class="contactform">
                     <h2>Contact Us Form</h2>
                     <form action="https://formspree.io/f/xjvjlqzq" method="POST">
@@ -76,9 +89,9 @@
                         <input type="email" id="email" name="email" required>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
-                        <label>
-                            <input type="checkbox" name="subscribe" value="yes">
-                            Please Subscribe me to the monthly newsletter.
+                        <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        Please Subscribe me to the monthly newsletter.
                         </label>
                         <button type="submit">Submit Form</button>
                     </form>
@@ -99,7 +112,6 @@
                     <figcaption>Casey Marie - Rafting Safety Instructor. Been rafting for over 10 years.</figcaption>
                 </figure>
             </div>
-        </section>
     </main>
     <footer>
         <nav class="sociallinks">
@@ -110,15 +122,15 @@
                 Moqups Wireframe
             </a>
             <a href="https://www.facebook.com" target="_blank">
-                <img src="images/faceboooklogo.jpg" alt="Facebook">
+                <img src="images/faceboooklogo.jpg" alt="Facebook logo">
                 Facebook
             </a>
             <a href="https://x.com" target="_blank">
-                <img src="images/xsocialmedialogo.jpg" alt="X">
+                <img src="images/xsocialmedialogo.jpg" alt="X logo">
                 X
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="images/instagramlogo.jpg" alt="Instagram">
+                <img src="images/instagramlogo.jpg" alt="Instagram logo">
                 Instagram
             </a>
         </nav>
