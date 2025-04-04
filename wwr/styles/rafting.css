@@ -25,8 +25,14 @@ header {
     align-items: center;
     background-color: white;
     padding: var(--padding);
-    margin: 0;
+    margin: 10px;
     border-bottom: var(--border);
+}
+
+section {
+    height: 400 px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .nav-logo {
@@ -70,6 +76,114 @@ h1 {
     color: red;
     margin-top: 2rem;
     margin-bottom: -18rem;
+}
+.contactustitle {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom:8rem;
+    border-collapse: collapse; 
+    width: 80%;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+thead th {
+    background-color: white;
+}
+.contact-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1rem; /* Add spacing between the map and the form */
+    align-items: center;
+    justify-items: center;
+    margin-top: 45px;
+    margin-bottom: 13rem;
+    height: 400px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: none;
+}
+
+.contactform h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contactform {
+    width: 100%;
+    max-width: 630px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.contactform input,
+.contactform textarea,
+.contactform button {
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    border: 1px solid #ccc; /* Adds a light border around the boxes */
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.contactform textarea {
+    resize: vertical;
+    max-height: 150px;
+}
+.contactform fieldset {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: .1rem;
+    border: none;
+}
+
+.contactform label {
+    display: flex; /* Ensure the label wraps the radio button and text */
+    align-items: center; /* Align the radio button and text vertically */
+    gap: 0.5rem; /* Add spacing between the radio button and its label text */
+}
+
+.contactform button {
+    background-color: black; /* Set button background color */
+    color: white;
+    border: none;
+    padding: 0.4rem; /* Add padding to the button */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Adds a hover effect */
+}
+
+.contactform button:hover {
+    background-color: red; /* Change background color on hover */
 }
 
 .hero {
@@ -147,6 +261,23 @@ h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+h3 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 50px;
+    color: red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.meetourteam {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: red;
+    margin-bottom:100px;
+}
 section p {
     color: var(--text-color);
     font-family: var(--secondary-font);
@@ -163,10 +294,43 @@ section p {
     color: red;
     margin-bottom: 2rem;
 }
+.employeelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    margin: 0 auto;
+}
 
+.employeelist figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.employeelist img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employeelist figcaption {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+}
 .adventures-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+    grid-template-columns: repeat(5, 1fr); /* creates 5 equal columns */
     gap: 1rem;
     justify-items: center;
     align-items: start; /* aligns items to the top */
@@ -181,7 +345,7 @@ section p {
     max-width: 150px;
     height: auto;
     border-radius: 5px; /*added rounded corners so the images looked not so square */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adventures-grid figcaption {
@@ -206,15 +370,16 @@ footer .sociallinks {
     gap: 1rem;
     align-items: center;
     margin-left: auto; /* pushes the social links to the right */
+    margin-top: 2rem;
 }
 
 footer .sociallinks img {
-    width: 24px; 
-    height: 24px;
+    width: 50px; 
+    height: 50px;
 }
 
 footer p {
     font-family: var(--secondary-font);
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
