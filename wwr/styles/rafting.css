@@ -102,20 +102,17 @@ thead th {
 }
 .contact-container {
     display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 1rem; /* Add spacing between the map and the form */
-    align-items: center;
-    justify-items: center;
-    margin-top: 45px;
-    margin-bottom: 13rem;
-    height: 400px;
+    grid-template-columns: 1fr 1fr; /* Two equal columns: one for the map and one for the form */
+    gap: 0.5rem; /* Add spacing between the map and the form */
+    align-items: start; /* Align items to the top */
+    justify-items: center; /* Center items horizontally within their columns */
+    margin-top: 2rem; /* Add spacing above the section */
+    margin-bottom: 2rem; /* Add spacing below the section */
 }
 
-.map iframe {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-    border: none;
+.map {
+    grid-column: 1; /* Place the map in the first column */
+    justify-self: center; /* Center the map horizontally */
 }
 
 .contactform h2 {
@@ -128,12 +125,17 @@ thead th {
     width: 100%;
     max-width: 630px;
     height: auto;
-    margin: 0 auto;
     padding: 1rem;
     border: 2px solid black;
     border-radius: 5px;
     background-color: white;
     overflow: hidden; /* Prevent content from overflowing the container */
+    grid-column: 2; /* Place the form in the second column */
+    justify-self: center; /* Center the form horizontally */
+    width: 100%; /* Ensure the form takes up the full width of its container */
+    max-width: 500px; /* Set a maximum width for the form */
+    top: -10rem;
+    grid-column: 2;
 }
 
 .contactform form {
