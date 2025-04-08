@@ -30,7 +30,7 @@ header {
 }
 
 section {
-    height: 400 px;
+    height: 400px;
     margin-top: 45px;
     margin-bottom: 45px;
 }
@@ -123,7 +123,6 @@ thead th {
 
 .contactform {
     width: 100%;
-    max-width: 630px;
     height: auto;
     padding: 1rem;
     border: 2px solid black;
@@ -339,7 +338,7 @@ section p {
 }
 
 .adventures-grid figure {
-    text-align: center
+    text-align: center;
 }
 
 .adventures-grid img {
