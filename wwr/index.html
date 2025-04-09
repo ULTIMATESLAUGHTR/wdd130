@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description" content="This is the Wild Rapids' Home Page that will include a sign-up form for the newsletter and link to the Trips page to start a reservation/trip.">
+    <meta name="author" content="Aaron Islas">
+    <title>Home Page of "The Wild Rapids" Company</title>
+</head>
+<body>
+    <header>
+        <img src="images/rapidslogo.jpg" alt="Rapids logo" class="nav-logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="home-hero-title">Want to Experience the Best White-Water Rafting in Utah? Look No Further!</h1>
+        <section class="home-hero-image">
+            <img src="images/rapidshomehero.jpg" alt="Hero image of Happy Rafters.">
+        </section>
+        <section>
+            <h2 class="home-page-title">Welcome to the Wild Rapids!</h2>
+                <p class="home-page-description">We are the best white-water rafting company in Utah. We have been in business for over 20 years and have the best guides in the industry. We offer a variety of trips for all skill levels, from beginners to experts. Our trips are designed to be fun, safe, and memorable.</p>
+                <p class="home-page-description">The Wild Rapids specialize in custom trips during the Spring/Summer Seasons. You can enjoy peace of mind while our Trip Planners help sort out the details so you can have the best experience alone or with family/friends. If you're ready to begin planning a trip with us, scroll down further on the page or use the "Contact Us" button to get our phone number and email options to reach us as soon as possible. Spots are limited so a reservation is highly recommended.</p>
+                <p class="home-page-description">We are located in Ogden, Utah, where we focus on rafting in the Ogden River. Our trips are all-inclusive, so you can focus on just having fun! Our staff will provide all equipment based on your needs.</p>
+        </section>
+        <section class="home-contact-container">
+            <div class="home-contact-form">
+                <h2>Want to be Notified for Upcoming Trips and Events?</h2>
+                <form class="newsletter-sign-up-form" action="https://formspree.io/f/xjvjlqzq" method="POST">
+                    <fieldset>
+                        <legend>Sign Up here for the Wild Rapids Newsletter!</legend>
+                    </fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        Subscribe me to the monthly newsletter.
+                    </label>
+                    <button type="submit">Sign Me Up!</button>
+                </form>
+            </div>
+        </section>
+            <h3 class="home-page-mission-statement">Ready To Start Your Trip?</h3>
+            <div class="call-to-action">
+                <p class="call-to-action-text-1">There's No better time to have Fun! If you're ready to start, use the "Book your Trip Now!" button below to reserve your adventure with us!</p>
+                <figure class="trip-sign-up-image">
+                    <img src="images/booktrips.jpg" alt="Image of a group of rafters on a trip.">
+                </figure>
+                <p class="call-to-action-text-2">We look forward to seeing you on the river! Before then, if you have any questions about your trip, or need to contact our staff, click on the "Contact Us" button below.</p>
+                <figure class="trip-sign-up-image">
+                    <img src="images/booktrips2.jpg" alt="Image of a group of rafters on a trip.">
+                </figure>
+                <a href="trips.html" class="button book-your-trip-button">Book Your Trip Now!</a>
+                <a href="contact.html" class="button contact-us-button">Contact Us</a>
+            </div>
+    </main>
+    <footer>
+        <nav class="sociallinks">
+            <p>Follow Us on Social Media!</p>
+            <p>&copy; 2025 &#10070; The Wild Rapids &#10070; Aaron Islas</p>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/faceboooklogo.jpg" alt="Facebook logo">
+                Facebook
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/xsocialmedialogo.jpg" alt="X logo">
+                X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagramlogo.jpg" alt="Instagram logo">
+                Instagram
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
