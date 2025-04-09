@@ -185,24 +185,37 @@ thead th {
 .contactform button:hover {
     background-color: red; /* Change background color on hover */
 }
+
+h2.home-page-title {
+    font-family: var(--heading-font);
+    font-size: 6rem;
+    color: red;
+    margin-top: 28rem;
+    text-align: center;
+    margin-bottom: 50rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: black 5px solid;
+}
 h1.home-hero-title {
     font-family: var(--heading-font);
     font-size:4rem;
     color: blue;
-    margin-top: 1rem;
+    margin-top: 17rem;
     z-index: 3;
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
 }
 .home-hero-image {
     display: block;
-    margin-bottom: 10rem;
-    margin-top: 10rem;
+    margin-bottom: 1rem;
+    margin-top: 15rem;
     max-width: 100%;
     height: auto;
     position: absolute;
@@ -464,7 +477,7 @@ h3 {
     object-fit: cover;
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: -5.5rem;
+    margin-top: 2rem;
 }
 
 /* Style for the second paragraph (Row 2, Column 1) */
@@ -490,7 +503,7 @@ h3 {
     object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-left: 5rem;
 }
 
