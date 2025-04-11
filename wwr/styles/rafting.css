@@ -100,18 +100,18 @@ thead th {
     background-color: white;
 }
 .contact-container {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two equal columns: one for the map and one for the form */
-    gap: 0.5rem; /* Add spacing between the map and the form */
-    align-items: start; /* Align items to the top */
-    justify-items: center; /* Center items horizontally within their columns */
-    margin-top: 2rem; /* Add spacing above the section */
-    margin-bottom: 2rem; /* Add spacing below the section */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem; 
+    align-items: start;
+    justify-items: center;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .map {
-    grid-column: 1; /* Place the map in the first column */
-    justify-self: center; /* Center the map horizontally */
+    grid-column: 1;
+    justify-self: center;
 }
 
 .contactform h2 {
@@ -482,10 +482,10 @@ h3 {
 
 /* Style for the second paragraph (Row 2, Column 1) */
 .call-to-action .call-to-action-text-2 {
-    grid-column:2; /* Place in the first column */
-    grid-row: 2; /* Place in the second row */
-    align-self: start; /* Align to the top of the grid cell */
-    justify-self: start; /* Align to the left of the grid cell */
+    grid-column:2;
+    grid-row: 2;
+    align-self: start; 
+    justify-self: start;
     font-family: var(--heading-font);
     font-size: 2rem;
     color: #007BFF;
@@ -545,13 +545,7 @@ h3 {
 .call-to-action .button:hover {
     color: red;
     background-color: #0056b3; 
-}
-.meetourteam {
-    text-align: center;
-    font-family: var(--heading-font);
-    font-size: 30px;
-    color: red;
-    margin-bottom:100px;
+
 }
 section p {
     color: var(--text-color);
@@ -593,16 +587,17 @@ section p {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 150px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .employeelist figcaption {
     font-family: var(--secondary-font);
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--text-color);
     margin-top: 100px;
     margin-bottom: 10rem;
+    border-radius: 15px;
     display: inline-block;
     background-color: white;
 }
@@ -633,6 +628,22 @@ section p {
     color: var(--text-color);
     margin-top: 1rem;
     margin-bottom: 5rem;
+}
+
+.contact-link-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 25px;
+    cursor: pointer; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link-button:hover {
+    background-color: red;
 }
 
 footer {

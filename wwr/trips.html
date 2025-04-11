@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-    <meta name="description" content="The Wild Rapids is a company that specializes in providing the best white water rafting experiences.">
+    <meta name="description" content="This Trips page will allow customers to see available trips packages and prices along with a link to the Contact Us page if further help is needed before a reservation is completed.">
     <meta name="author" content="Aaron Islas">
-    <title>About Us</title>
+    <title>Trips Page for The Wild Rapids Company</title>
 </head>
 <body>
     <header>
@@ -27,43 +27,62 @@
         </nav>
     </header>
     <main>
-        <h1>The Wild Rapids</h1>
-            <div class="hero">
-                <p class="hero-text">Love the Outdoors and want to challenge yourself to the fullest? Look no further! We're here to get your heart pounding with White Water Rafting experiences you'll never forget!</p>
-                <img src="images/rapidshero.jpg" alt="Rapids Hero Image" class="hero-img">
+        <h1 class="trips-h1">The Wild Rapids Trip and Reservation Details</h1>
+            <div class="trips-summary">
+                <aside>
+                    <h2 class="trips-summary-header">Trip Summary</h2>
+                    <p class="summary-1">Our first, and most popular is our Half-Day Adventure offering. Time Slots are limited to mornings from 8AM-12PM(Noon).</p>
+                    <p class="summary-2">Our second offering is our Full-Day Adventure. Aimed towards Professional Rafters. Time Slots are open from 8AM-7PM [Weather and Sunlight Permitting].</p>
+                    <p class="summary-3">Check out our trip options below and book your adventure today!</p>
+                </aside>
+                <section class="adventures-section">
+                        <h2 class="pricing-details-title">Pricing Details for Rafting Adventure Packages</h2>
+                        <div class="adventure-tables">
+                            <table class="half-day-adventure-table">
+                                <caption>Half-Day Adventure</caption>
+                                <tr>
+                                    <th>Price</th>
+                                    <td>$75.00 per person</td>
+                                </tr>
+                                <tr>
+                                    <th>Time</th>
+                                    <td>8AM - 12PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Includes</th>
+                                    <td>Safety gear, raft, and guide</td>
+                                </tr>
+                            </table>
+                            <table class="full-day-adventure-table">
+                                <caption>Full-Day Adventure</caption>
+                                <tr>
+                                    <th>Price</th>
+                                    <td>$150.00 per person</td>
+                                </tr>
+                                <tr>
+                                    <th>Time</th>
+                                    <td>8AM - 7PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Includes</th>
+                                    <td>Safety gear, raft, guide, and lunch</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
             </div>
-        <section class="history-section">
-            <h2>History</h2>
-            <div class="history-grid">
-                <p class="history-left">The Wild Rapids is a company that specializes in providing the best white water rafting experiences. We have been in business for over 20 years and have taken thousands of people on the adventure of a lifetime.</p>
+        <section class="trips-description-section">
+            <h3 class="trips-expectation-header">What to Expect from your Trip</h2>
+            <div class="trips-grid">
+                <p class="half-day-trip-description">After a quick safety check on equipment and rafting procedures our team will meet you at the Ogden River. After embarking, every 1 hour we'll do a wellness check to ensure everyone can continue rafting. Lunchtime will start at the 3 or 4 hour mark depending on guests. (food not provided).</p>
+                <p class="full-day-trip-description">Similar to the half-day adventure schedule, with breaks to eat and rest as needed. Lunchtime can also be scheduled earlier or later depending on preferences. After 5PM, weather depending we'll suggest an ending point to finish the trip, or if plans have already been established to continue for up to 2 hours more for evening low-light rafting practice. (For Certified Rafting Experts Only).</p>
                 <img src="images/rapidshistory.jpg" alt="Rapids History Image" class="history-image">
-                <p class="history-right">Our guides are experienced professionals who know the rivers like the back of their hand. We offer trips for all skill levels, from beginners to experts. Whether you are looking for a relaxing float down a calm river or an adrenaline-pumping ride through class V rapids, we have the perfect trip for you. So come and experience the thrill of white water rafting with us!</p>
             </div>
         </section>
-        <section class="adventures-section">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventures-grid">
-                <figure>
-                    <img src="images/rapids1.jpg" alt="Rapids 1 Image">
-                    <figcaption>Happy Times Trip</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapids2.jpg" alt="Rapids 2 Image">
-                    <figcaption>Belly of the Beast</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapids3.jpg" alt="Rapids 3 Image">
-                    <figcaption>Make sure to splash and not crash!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapids4.jpg" alt="Rapids 4 Image">
-                    <figcaption>Family Fun Has Never Been This Good!</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rapids5.jpg" alt="Rapids 5 Image">
-                    <figcaption>Fulfill Your Life!</figcaption>
-                </figure>
-            </div>
+        <section>
+            <h2 class="trips-contact-header">Got Questions before reserving? Contact Us!</h2>
+            <p class="trips-contact-description">If you have any questions or need assistance with your reservation, please don't hesitate to reach out to us. Our team is here to help you plan the perfect rafting adventure! Please use the "contact us" button to fill out a contact form and we'll get back to you as soon as possible.</p>
+            <button onclick="window.location.href='https://ULTIMATESLAUGHTR.github.io/wdd130/wwr/contact.html'" class="contact-link-button">Contact Us</button>
         </section>
     </main>
     <footer>
