@@ -199,10 +199,10 @@ thead th {
 
 .trips-summary {
     display: grid; /* Enable CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Three columns: left aside, main content (if any), right aside */
-    gap: 6rem; /* Add spacing between columns */
+    grid-template-columns: 1fr 2fr; /* Three columns: left aside, main content (if any), right aside */
+    gap: 2rem; /* Add spacing between columns */
     align-items: start; /* Align items to the top */
-    margin: 2rem auto; /* Center the layout horizontally */
+    margin: 2rem; /* Center the layout horizontally */
     max-width: 1200px; /* Limit the width of the layout */
 }
 
@@ -210,47 +210,40 @@ thead th {
     grid-column: 1;
     padding: 2rem;
     margin-top: -3rem;
+    margin-left: 10rem;
 }
 
 .right-trips-aside {
     grid-column: 2; /* Place in the third column */
     background-color: #f9f9f9;
-    padding: 1rem;
+    padding: 7rem;
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-right: -25rem;
+    margin-left: -35rem;
 }
 
 .summary-1, .summary-2, .summary-3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: var(--secondary-font);
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     padding: 2.2rem;
-    background-color: white;
+    background-color: #007BFF;
     border-radius: 50px;
     border: solid 3px black;
+    
 }
 
 .left-trips-aside img {
-    width:450px; /* Set the width to 400px */
-    height: 230px; /* Set the height to 400px */
-    object-fit: cover; /* Ensure the images maintain their aspect ratio and fill the dimensions */
-    display: block; /* Treat the images as block elements */
-    margin-top: 0.5rem; /* Center the images horizontally */
+    width:450px;
+    height: 230px;
+    object-fit: cover; 
+    display: block; 
+    margin-top: 0.5rem; 
     border-radius: 200px;
     padding: 1rem;
-}
-
-h2.pricing-details-title {
-    text-align: center;
-    font-family: var(--heading-font);
-    font-size: 4rem;
-    color: #007BFF;
-    margin-top: 30rem;
-    margin-bottom: 1rem;
-    background-color: white;
-    border-radius: 90px;
 }
 
 h2.trips-summary-header {
@@ -261,6 +254,7 @@ h2.trips-summary-header {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: white;
+    border: bold 5px solid black;
     border-radius: 90px;
 }
 
@@ -344,13 +338,53 @@ h1.home-hero-title {
 .trips-expectation-header {
     text-align: center;
     font-family: var(--heading-font);
-    font-size: 4rem;
+    font-size: 5rem;
     color: red;
-    margin-top: 15rem;
-    margin-bottom: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     background-color: white;
     border-radius: 90px;
 }
+
+.half-day-trip-description {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add spacing below each paragraph */
+    text-align: left; /* Align text for a clean look */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.full-day-trip-description {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add spacing below each paragraph */
+    text-align: left; /* Align text for a clean look */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.trips-contact-description {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+
 
 .history-grid {
     display: grid; /* Use CSS Grid for layout */
@@ -390,6 +424,100 @@ h2 {
     margin-bottom: 1rem;
 
 }
+
+.half-day-table-title {
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    color:#007BFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.full-day-table-title {
+    font-family: var(--heading-font);
+    font-size: 4rem;
+    color: #007BFF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.adventures-pricing-section {
+    display: grid; /* Enable CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows: one for the title, one for the tables */
+    gap: 2rem; /* Add spacing between rows and columns */
+    text-align: center; /* Center-align text within the section */
+    margin-left: 4rem;
+    margin-top: 7rem;
+    max-width: 1200px; /* Limit the width of the section */
+    justify-items: center; /* Center items horizontally within the grid */
+    align-items: center; /* Center items vertically within the grid */
+    justify-content: center; /* Center the entire grid container horizontally */
+}
+
+h2.pricing-details-title {
+    font-size: 4rem; 
+    font-family: var(--heading-font); 
+    color: red; 
+    margin-bottom: 4rem;
+    margin-left: 25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: center;
+    width: 500px;
+
+    
+}
+
+.half-day-adventure-table,
+.full-day-adventure-table {
+    width: 500px; 
+    height: 500px; 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 2rem;
+    text-align: left; 
+}
+
+.half-day-adventure-table {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+
+.full-day-adventure-table {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+.half-day-adventure-table th,
+.full-day-adventure-table th {
+    background-color: #007BFF;
+    color: white; 
+    padding: 1rem; 
+    font-size: 2.5rem; 
+    text-align: center; 
+}
+
+.half-day-adventure-table td,
+.full-day-adventure-table td {
+    padding: 1rem;
+    width: 50%; 
+    vertical-align: middle;
+    font-size: 2rem; 
+}
+
 .home-page-title {
     font-family: var(--heading-font);
     font-size: 6rem;
@@ -692,7 +820,7 @@ section p {
 }
 .adventures-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* creates 5 equal columns */
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     justify-items: center;
     align-items: start;
@@ -707,7 +835,7 @@ section p {
     width: 100%;
     max-width: 200px;
     height: auto;
-    border-radius: 5px; /*added rounded corners so the images looked not so square */
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -719,20 +847,55 @@ section p {
     margin-bottom: 5rem;
 }
 
+.half-day-trip-description {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add spacing below each paragraph */
+    text-align: left; /* Align text for a clean look */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.full-day-trip-description {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add spacing below each paragraph */
+    text-align: left; /* Align text for a clean look */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+
+
 .contact-link-button {
     background-color: #007BFF;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     border-radius: 25px;
     cursor: pointer; 
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-left: 50rem;
 }
 
 .contact-link-button:hover {
     background-color: red;
+}
+
+
+.trips-description-section {
+    margin-top: 38rem;
+    margin-bottom: 25rem;
 }
 
 footer {
