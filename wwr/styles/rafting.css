@@ -210,17 +210,17 @@ thead th {
     grid-column: 1;
     padding: 2rem;
     margin-top: -3rem;
-    margin-left: 10rem;
+    margin-left: 2rem;
 }
 
 .right-trips-aside {
     grid-column: 2; /* Place in the third column */
     background-color: #f9f9f9;
-    padding: 7rem;
+    padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 10px;
-    margin-right: -25rem;
-    margin-left: -35rem;
+    margin-right: -15rem;
+    margin-left: -30rem;
 }
 
 .summary-1, .summary-2, .summary-3 {
@@ -886,6 +886,8 @@ section p {
     text-decoration: none;
     transition: background-color 0.3s ease;
     margin-left: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contact-link-button:hover {
