@@ -254,7 +254,7 @@ h2.trips-summary-header {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: white;
-    border: bold 5px solid black;
+    border: bold 5px black;
     border-radius: 90px;
 }
 
@@ -609,7 +609,6 @@ h2.pricing-details-title {
 
 .newsletter-sign-up-form input[type="checkbox"] {
     width: auto;
-    position: right;
     margin-top: .5rem;
     margin-right: 1rem;
     margin-right: 5.5rem;
@@ -687,7 +686,6 @@ h3 {
 .call-to-action .trip-sign-up-image:first-of-type {
     grid-column: 2;
     grid-row: 1; 
-    align-self: right;
     justify-self: left;
     width: 200px;
     height: 200px;
